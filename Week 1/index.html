@@ -1,0 +1,117 @@
+<!Doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Week 1 Task 1</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+        
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 300px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://unpkg.com/vue@next"></script>
+    <h1>
+        Covid-19 cases in Victoria
+    </h1>
+
+    <h2>
+        This is a week-wise data
+    </h2>
+
+    <p style="color: brown;">
+        These are the predicted numbers given by Department of Health and Human Services, Victoria
+    </p>
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <h2>Column 1</h2>
+            <p>Week 1 = 10</p>
+            <p>Week 2 = 25</p>
+            <p>Week 3 = 50</p>
+            <p>Week 4 = 65</p>
+            <p>Week 5 = 100</p>
+            <p>Week 6 = 30</p>
+            <p>Week 7 = 15</p>
+        </div>
+    </div>
+    
+    <h1>Calculate the average.</h1>
+    <button type="button" onclick="calculateAverage()">
+      The average case is:
+    </button>
+    <script src="main.js"></script>
+
+    <h1>Hello, todays time is:</h1>
+
+    <button type="button"
+        onclick="document.getElementById('time').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
+    <p id="time"></p>
+
+    <p>My First para is for <span class = "a"> inline </span> A. </p>
+    <br>
+    <p>My 2nd <span class = "b"> para </span> </p>
+    
+    <h2>Link:</h2>
+    <a href = "https://www.deakin.edu.au"> Visit Deakin</a>
+
+    <h2>Image:</h2>
+    <img src = "pic.png">
+
+    <h2>Table:</h2>
+    <table>
+        <tr>
+          <th>Student</th>
+          <th>Year</th> 
+        </tr>
+        <tr>
+          <td>Garry</td>
+          <td>2020</td> 
+        </tr>
+        <tr>
+          <td>Div</td>
+          <td>2022</td> 
+        </tr>
+      </table>
+
+    <h2>Ordered List:</h2>
+    <ol>
+        <li>Milk</li> 
+        <li>bread</li>
+        <li>egss</li>
+    </ol>
+
+    <h2>Two Equal Columns:</h2>
+
+    <div class="row">
+    <div class="column" style="background-color:#aaa;">
+        <div class="city">
+            <h2>Deakin University</h2>
+        </div> 
+    </div>
+    <div class="column" style="background-color:#bbb;">
+        <div class="city">
+            <p>Australia's one of the Top 1% Universities.</p>
+        </div> 
+    </div>
+    </div>
+
+</body>
+
+</html>
