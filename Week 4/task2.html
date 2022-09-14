@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <div id="testing1">
+        <span v-if="seen">This text should be visible.</span>
+    </div>
+
+    <div id="testing2">
+        <span v-if="seen">Awesome</span>
+        <span v-else="seen">Sad</span>
+    </div>
+    <div id="testing3">
+        <ol>
+            <li v-for="todo in todos">
+                {{ todo.text }}
+            </li>
+        </ol>
+    </div>
+
+    <h1 v-show="ok">Hello, This is Garry!</h1>
+
+    <script>
+        var testing1 = new Vue({
+            el: '#testing1',
+            data: {
+                seen: true
+            }
+        })
+        var testing2 = new Vue({
+            el: '#testing2',
+            data: {
+                seen: false
+            }
+        })
+        var testing3 = new Vue({
+            el: '#testing3',
+            data: {
+                todos: [{
+                    text: 'Garry B'
+                }, {
+                    text: '4th Year Student.'
+                }, {
+                    text: 'Div'
+                }, {
+                    text: '1st Year Student.'
+                }, ]
+            }
+        })
+    </script>
+</body>
+
+</html>

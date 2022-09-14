@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Task 3</h1>
+    <h1>JavaScript Date API</h1>
+    <p>"getFullYear()" method example</p>
+    <p id="demo"></p>
+    <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d.getFullYear();
+    </script>
+
+    <h3>Hello, todays time is:</h3>
+
+    <button type="button"
+        onclick="document.getElementById('time').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
+    <p id="time"></p>
+
+    <h3> New Date and Time is:</h3>
+    <p id="newtime"></p>
+    <script>
+        const dd = new Date(2020, 08, 22, 09, 02, 30, 0);
+        document.getElementById("newtime").innerHTML = dd;
+    </script>
+    
+    <h3>Using new Date(milliseconds), creates a new date object as 'January 1, 1970, 
+        00:00:00 Universal Time (UTC)' plus the milliseconds:</h3>
+    <p id="do"></p>
+    <script>
+        const a = new Date(86400000);
+        document.getElementById("do").innerHTML = a;
+    </script>
+
+    <p id="dis"></p>
+    <script>
+        const x = new Date();
+        x.setFullYear(2021, 8, 14);
+        document.getElementById("dis").innerHTML = x;
+    </script>
+    
+</body>
+</html>

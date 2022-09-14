@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Task 2.1</h1>
+    <h2>JavaScript Number Methods</h2>
+
+    <p>Using toString() method to convert numbers to string -- </p>
+    <p id="demo"></p>
+    <script>
+        let x = 243;
+        document.getElementById("demo").innerHTML = x.toString() + "<br>" + (243).toString() + "<br>" + (200 + 43).toString();
+    </script>
+
+    <p>Using toExponential() method for 2 --</p>
+    <p id="p"></p>
+    <script>
+        let y = 2;
+        document.getElementById("p").innerHTML = y.toExponential(3);
+    </script>
+
+    <p>Using toFixed() method for 2.98 --</p>
+    <p id="z"></p>
+    <script>
+        let a = 2.98;
+        document.getElementById("z").innerHTML = a.toFixed();
+    </script>
+
+    <h1>Task 2.2</h1>
+    <h2>JavaScript Array Methods</h2>
+
+    <p>Using toString() method to return an array as a string separated by comma:</p>
+    <p id="d"></p>
+    <script>
+        const pizza = ["Corn", "Olives", "Chicken", "Onion", "Capsicum"];
+        document.getElementById("d").innerHTML = pizza.toString();
+    </script>
+
+    <p>Using pop() method to remove last element from the array:</p>
+    <p id="m"></p>
+    <script>
+        const piz = ["Corn", "Olives", "Chicken", "Onion", "Capsicum"];
+        piz.pop();
+        document.getElementById("m").innerHTML = piz;
+    </script>
+</body>
+
+</html>

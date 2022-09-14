@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function length() {
+            let text_length = document.getElementById("p").innerHTML.length;
+            document.getElementById("output").innerHTML = "The given line is " + text_length + " characters long."
+        }
+        function replace() {
+            let text = document.getElementById("a").innerHTML;
+            document.getElementById("a").innerHTML = text.replace("SIT","SIT 120");
+        }
+        function toUpperCase() {
+            let text = document.getElementById("b").innerHTML;
+            document.getElementById("b").innerHTML = text.toUpperCase();
+        }
+        function concat(){
+            let text1 = document.getElementById("c").innerHTML;
+            let text2 = document.getElementById("d").innerHTML;
+            let text3 = text1.concat(" ",text2);
+            document.getElementById("text3").innerHTML = text3;
+        }
+        function slice(s) {
+            let str = document.getElementById("s").innerHTML
+            document.getElementById("o").innerHTML = str.slice(7,13);    
+        }
+
+    </script>
+</head>
+
+<body>
+    <p id="p">Welcome to SIT 120: Introductions to responsive web apps.</p>
+    <p id="output"></p>
+    <script>
+        length()
+    </script>
+
+    <br>
+
+    <p>Welcome to SIT: Introductions to responsive web apps.</p>
+    <p> Replace SIT to SIT120 --- </p>
+    <p id="a">Welcome to SIT: Introductions to responsive web apps.</p>
+    <p id="output"></p>
+    <script>
+        replace()
+    </script>
+
+    <br> 
+
+    <p>hi, im garry! -- To upper case</p>
+    <p id="b">HI, im garry!</p>
+    <script>
+        toUpperCase()
+    </script>
+
+    <br>
+    <p id="c"> Hello</p>
+    <p id="d"> World</p>
+    <p> Using concat() Method -- </p>
+    <p id="text3"></p>
+    <script>
+        concat()
+    </script>
+    
+     <br>
+     <p id="s">Apple, Banana, Pear</p>
+     <p> Slicing the sentence to print "Banana" --</p>
+     <p id="o"></p>
+     <script>
+        slice(s)
+     </script> 
+
+</body>
+
+</html>

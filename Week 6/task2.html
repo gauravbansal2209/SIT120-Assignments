@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>task2</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style>
+        .demo {
+            font-family: monospace;
+            border: 3px double #aaa;
+            border-radius: 4px;
+            padding: 30px 50px;
+            margin-top: 3em;
+            margin-bottom: 60px;
+            user-select: none;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="v-model-multiple-checkboxes" class="demo">
+        <input type="checkbox" id="Garry" value="Garry" v-model="checkedNames">
+        <label for="Garry">Garry</label>
+        <input type="checkbox" id="Div" value="Div" v-model="checkedNames">
+        <label for="Div">Div</label>
+        <input type="checkbox" id="Ash" value="Ash" v-model="checkedNames">
+        <label for="Ash">Ash</label>
+        <input type="checkbox" id="Phil" value="Phil" v-model="checkedNames">
+        <label for="Phil">Phil</label>
+
+        <br><br>
+        
+        <span>Checked names: {{ checkedNames }}</span>
+
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: "#v-model-multiple-checkboxes",
+            data() {
+                return {
+                    checkedNames: []
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
